@@ -34,3 +34,14 @@ else:
   drone_cost = weight * 14.25
 
 print(f"Drone Shipping Cost: ${drone_cost:.2f}")
+
+cheapest = min(ground_cost, premium_cost, drone_cost)
+
+if cheapest == ground_cost:
+  print(f"Cheapest method: Standard Ground Shipping (${ground_cost:.2f})")
+
+elif cheapest == premium_cost:
+  print(f"Cheapest method: Premium Ground Shipping (${premium_cost:.2f})")
+
+else:
+  print(f"Cheapest method: Drone Shipping (${drone_cost:.2f})")
