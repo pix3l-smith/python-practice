@@ -1,0 +1,2 @@
+This is a placeholder to represent the 13th day of the 100 Days of Python course.
+This part of the course went over various methods of debugging Python programs.

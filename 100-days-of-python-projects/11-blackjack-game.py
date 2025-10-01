@@ -3,6 +3,7 @@ import os
 
 
 def clear_screen():
+    """Clears the CLI screen when called"""
     os.system("cls" if os.name == "nt" else "clear")
 
 
@@ -29,6 +30,7 @@ def calculate_score(cards):
 
 
 def compare(score1, score2):
+    """Compares the user's score with the dealer's score"""
     if score1 == 0 and score2 == 0:
         return "\nIt's a draw"
     elif score2 == 0:
@@ -48,6 +50,7 @@ def compare(score1, score2):
 
 
 def play_game():
+    """Runs the game"""
     # Empty lists to represent the user's hand of cards and the dealer's hand of cards
     user_cards = []
     user_score = -1
